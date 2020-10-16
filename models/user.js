@@ -24,7 +24,7 @@ const UserSchema = new Schema(
     cabin:
     {
         type: String,
-        default: "yes"
+        default: ""
     },
     //an array of posts passed by the reference to id
     diet: 

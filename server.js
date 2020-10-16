@@ -2,7 +2,6 @@
 const express = require('express'); 
 const app = express();
 const methodOverride = require('method-override')
-
 const router = express.Router();
 // const controller = require('./controller/booking')
 
@@ -14,7 +13,6 @@ app.set('view engine', 'ejs');
 
 app.use(express.urlencoded({extended: false}));
 app.use(express.static(`${__dirname}/public`));
-
 app.use(methodOverride('_method'))
 //Routers
 
@@ -29,11 +27,8 @@ app.get('/', (req, res) => {
 })
 
 
-
-
 app.use('/mars', require('./controller/mars'));
 app.use('/booking', require('./controller/booking'));
-
 
 
 app.listen(3000, ()=>{

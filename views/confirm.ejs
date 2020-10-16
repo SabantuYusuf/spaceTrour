@@ -1,4 +1,15 @@
 <%- include('./Partials/_head') %>
 
 
-<%= updatedUser.diet%>
+
+<div class="card" style="width: 20rem;">
+    <img id="card-image" src="../images/SubOrbital.png" class="card-img-top" alt="Card image cap" style="height:190px;">
+    <div class="card-body">
+        <h5 class="card-title">CONFIRM BOOKING: MARS </h5>
+        <p class="card-text">DEPARTURE: <%= updatedUser.flightSchedule%><br>
+        SUIT: <%= updatedUser.suitesize%>,
+        <%= updatedUser.suitecolor%><br>
+        CABIN: <%= updatedUser.cabin%><br>
+        DIET: <%= updatedUser.diet%> </p>
+        <a href="/" class="btn btn-primary">Book Now</a>
+</div>

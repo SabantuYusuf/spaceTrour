@@ -2,11 +2,12 @@ require("dotenv").config();
 const express = require('express');
 const router = express.Router();
 const { response } = require('express');
-
+const app = express();
 const db = require("../models");
 
-// booking page 
+app.use(express.static(`${__dirname}/public`));
 
+// booking page 
 router.get('/', (req, res) => {
     db.Item.find( { category: 'departure' })
     .then((items) => {

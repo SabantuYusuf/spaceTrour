@@ -4,31 +4,34 @@
     <%- include('./Partials/_head') %>
 </head>
 <body>
-    <h1>SELECT CABIN</h1>
-<img src="../images/PentCabin.png">
-    <div class="card" style="width: 20rem;">
-        <img id="card-image" src="../images/DoubleCabin.png" class="card-img-top" alt="Card image cap" style="height:350px;">
-        <div class="card-body">
+
+
+    <h2 style= "color:white;">SELECT CABIN</h2>
+
+    <div class="card">
+        <img id="card-image" src="http://localhost:3000/images/PentCabin.png" class="card-img-top" alt="Card image cap" style="height:350px;">
+        <div class="card-body" >
             <form action="/booking/cabin/<%= user %>/edit?_method=PUT" method="post">
                 <label>
                     <input hidden type="radio" name="test" value="Single" checked>
-                    <img src="../images/SingleCabin.png" style="height:50px; width:55px;">
+                    <img src="http://localhost:3000/images/SingleCabin.png" style="height:50px; width:55px;">
                 </label>
                 <label>
                     <input hidden type="radio" name="test" value="Double" checked>
-                    <img src="../images/DoubleCabin.png" style="height:50px; width:55px;">
+                    <img src="http://localhost:3000/images/DoubleCabin.png" style="height:50px; width:55px;">
                 </label>
                 <label>
                     <input hidden type="radio" name="test" value="Delux" checked>
-                    <img src="../images/PentCabin.png" style="height:50px; width:55px;">
+                    <img src="http://localhost:3000/images/PentCabin.png" style="height:50px; width:55px;">
                 </label>
                 <br>
+                Single  &nbsp; Double &nbsp; Delux <br>
                 <input type="checkbox" name="cabin" id="cabin" value="Single" style="margin: 20px;">
                 <input type="checkbox" name="cabin" id="cabin" value="Double" style="margin: 20px;">
                 <input type="checkbox" name="cabin" id="cabin" value="Delux" style="margin: 20px;"><br>
-    
-    
-                <button type="submit" class="waves-effect waves-light btn" style = "background-color: #7649fe">Confirm Suit</button>
+                <a href="#" class="btn btn-primary" style= "background-color: white; color: #7649fe; border-color:grey;">View Amenities</a>
+                <button type="submit" class="waves-effect waves-light btn" style = "background-color: #7649fe; width: 130px;">Select</button>
+            </div>
             </form> 
         </div>
     </body>
