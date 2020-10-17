@@ -1,5 +1,20 @@
 <%- include('./Partials/_head') %>
+<div class="card" style="width: 20rem;">
+    <img id="card-image" src="../../../images/marstrip.png" class="card-img-top" alt="Card image cap" style="height:190px;">
+    <div class="card-body">
+        <h5 class="card-title">CONFIRM BOOKING: MARS </h5>
+        <p class="card-text">DEPARTURE: <%= updatedUser.flightSchedule%><br>
+        SUIT: <%= updatedUser.suitesize%>,
+        <%= updatedUser.suitecolor%><br>
+        CABIN: <%= updatedUser.cabin%><br>
+        DIET: <%= updatedUser.diet%> </p>
+        <!-- <div class="card-footer"> -->
+            <a href="/" class="btn btn-primary btn btn-primary btn-card-primary" style="width:100%;">Complete Booking</a>
+        <!-- </div> -->
+            <!-- Once a user has everything confirmed direct to confirmationpage -->
+            <!-- <a href="/" class="btn btn-primary btn btn-primary btn-card-primary" style="width:100%;">Complete Booking</a> -->
 
+<<<<<<< HEAD
 
 
 <div class="card" style="width: 20rem;">
@@ -12,4 +27,7 @@
         CABIN: <%= updatedUser.cabin%><br>
         DIET: <%= updatedUser.diet%> </p>
         <a href="/" class="btn btn-primary">Complete Booking</a>
+=======
+        
+>>>>>>> main
 </div>

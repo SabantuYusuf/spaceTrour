@@ -1,4 +1,5 @@
 body {
+    font-family: 'Oswald', sans-serif;
     background-color: #031926;
     background-image: url("../images/MainBG.png") !important;
     max-width: 100vh; 
@@ -8,8 +9,12 @@ body {
     background-repeat: repeat-y;
     background-size: 100%;
     text-align: center;
-    /* color: white */
+    color: #f8f9fa;
+
     
+}
+h1 {
+    color: #ffff !important;
 }
 
 .navbar-brand {
@@ -63,7 +68,7 @@ button {
 .card {
     margin: 0 auto;
     float: none;
-    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: left;
     border-top-left-radius: calc(.5rem + 2px);
     border-top-right-radius: calc(.5rem + 2px);
@@ -72,39 +77,76 @@ button {
 
 }
 
+.dual-btn-card .card-footer {
+    padding: 0;
+}
+
 .card-img, 
 .card-img-top {
     border-top-left-radius: calc(.5rem + 2px);
     border-top-right-radius: calc(.5rem + 2px);
 }
 
-h1,
-h2,
-h6 {
-    text-align: center;
+
+H4 {
     color: #f8f9fa;
 }
-
-
-H3,
-H4,
-H5 {
+p {
     color: #031926;
 }
 
-/* #card-image {
+.card-title {
+    color: #031926 !important;
+    font-weight: bold;
+}
 
-} */
 
-.col-md-4{ margin: 20px auto; } 
+/* Aligh Booking  */
+.departure {
+    text-align: left;
+    margin-left: 20px;
+}
+.departure2 {
+    text-align: left;
+    margin-left: 80px;
+    color: #7649FE;
+    padding: 10px;
+}
+
+
+/* .col-md-4{ margin: 20px auto; }  */
 
 form {
     color: white !important;
 }
 
-.btn {
-    color: white;
+.btn-card-primary {
+    background-color: #7549FE;
+    color: #FCFBFE;
+    border: none;
+    border-radius: 0;
 }
+
+.btn-card-secondary {
+    background-color: #FCFBFE;
+    color: #7549FE;
+    border: none;
+    border-radius: 0;
+}
+
+.dual-btn-card .btn-card-primary {
+    width: 50%;
+    border-bottom-right-radius: .25rem;
+}
+
+.dual-btn-card .btn-card-secondary {
+    width: 50%;
+    border-bottom-left-radius: .25rem;
+}
+
+
+
+
 
 #suitimage {
     width: 30px;
@@ -127,3 +169,22 @@ form {
   /* [type=radio]:checked + img {
     outline: 2px solid #f00;
   } */ 
+
+
+.moon {
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rocket {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.card-body {
+    padding: 10px;
+}

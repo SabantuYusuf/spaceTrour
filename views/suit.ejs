@@ -4,57 +4,62 @@
     <%- include('./Partials/_head') %>
 </head>
 <body>
-
+    <!-- <body style="background-image:url(http://localhost:3000/images/MainBG.png); max-width: 100vh;background-size: 100%;background-color: #031926;"> -->
  
     <h1>SELECT SUIT </h1>
 
 
-    <div class="card" style="width: 20rem;">
-    <img id="card-image" src="../images/Suit_Front_Sample.png" class="card-img-top" alt="Card image cap" style="height:350px;">
-    <div class="card-body">
-        <form action="/booking/<%= userId %>/edit?_method=PUT" method="post">
-            <label>
-                <input hidden type="radio" name="test" value="RED" >
-                <img src="../images/Suit_Red_Portrait.png" style="height:50px; width:55px;">
-            </label>
-            <label>
-                <input hidden type="radio" name="test" value="WHITE" >
-                <img src="../images/Suit_White_Portrait.png" style="height:50px; width:55px;">
-            </label>
-            <label>
-                <input hidden type="radio" name="test" value="YELLOW" >
-                <img src="../images/Suit_Yellow_Portrait.png" style="height:50px; width:55px;">
-            </label>
-            <label>
-                <input hidden type="radio" name="test" value="BLUE" >
-                <img src="../images/Suit_Blue_Portrait.png" style="height:50px; width:55px;">
-            </label>
-            <br>
-            <input type="checkbox" name="suitecolor" id="suitecolor" value="RED" style="margin: 20px;">
-            <input type="checkbox" name="suitecolor" id="suitecolor" value="WHITE" style="margin: 20px;">
-            <input type="checkbox" name="suitecolor" id="suitecolor" value="YELLOW" style="margin: 20px;">
-            <input type="checkbox" name="suitecolor" id="suitecolor" value="BLUE" style="margin: 20px;"><br>
+    <div class="dual-btn-card card" style="width: 20rem;">
+        <img id="card-image" src="../images/Suit_Front_Sample.png" class="card-img-top" alt="Card image cap" style="height:350px;">
+        <div class="card-body">
+            <form action="/booking/<%= userId %>/edit?_method=PUT" method="post">
+                <label>
+                    <input hidden type="radio" name="test" value="RED" >
+                    <img src="../images/Suit_Red_Portrait.png" style="height:50px; width:55px;">
+                </label>
+                <label>
+                    <input hidden type="radio" name="test" value="WHITE" >
+                    <img src="../images/Suit_White_Portrait.png" style="height:50px; width:55px;">
+                </label>
+                <label>
+                    <input hidden type="radio" name="test" value="YELLOW" >
+                    <img src="../images/Suit_Yellow_Portrait.png" style="height:50px; width:55px;">
+                </label>
+                <label>
+                    <input hidden type="radio" name="test" value="BLUE" >
+                    <img src="../images/Suit_Blue_Portrait.png" style="height:50px; width:55px;">
+                </label>
+                <br>
+                <input type="checkbox" name="suitecolor" id="suitecolor" value="RED" style="margin: 20px;">
+                <input type="checkbox" name="suitecolor" id="suitecolor" value="WHITE" style="margin: 20px;">
+                <input type="checkbox" name="suitecolor" id="suitecolor" value="YELLOW" style="margin: 20px;">
+                <input type="checkbox" name="suitecolor" id="suitecolor" value="BLUE" style="margin: 20px;"><br>
 
 
 
-            <label>
-                <input hidden type="radio" name="test" value="SMALL">
-                <img src="../images/sizeS.png" style="height:50px; width:55px;">
-            </label> 
-                <input hidden type="radio" name="test" value="MEDIUM" >
-                <img src="../images/sizeM.png" style="height:50px; width:55px;">
-            </label>  
-                <input hidden type="radio" name="test" value="LARGE" >
-                <img src="../images/sizeL.png" style="height:50px; width:55px;">
-            </label><br>
-            <input type="checkbox" name="suitesize" id="suitesize" value="SMALL" style="margin: 20px;">
-            <input type="checkbox" name="suitesize" id="suitesize" value="MEDIUM" style="margin: 20px;">
-            <input type="checkbox" name="suitesize" id="suitesize" value="LARGE" style="margin: 20px;">
+                <label>
+                    <input hidden type="radio" name="test" value="SMALL">
+                    <img src="../images/sizeS.png" style="height:50px; width:55px;">
+                </label> 
+                    <input hidden type="radio" name="test" value="MEDIUM" >
+                    <img src="../images/sizeM.png" style="height:50px; width:55px;">
+                </label>  
+                    <input hidden type="radio" name="test" value="LARGE" >
+                    <img src="../images/sizeL.png" style="height:50px; width:55px;">
+                </label><br>
+                <input type="checkbox" name="suitesize" id="suitesize" value="SMALL" style="margin: 20px;">
+                <input type="checkbox" name="suitesize" id="suitesize" value="MEDIUM" style="margin: 20px;">
+                <input type="checkbox" name="suitesize" id="suitesize" value="LARGE" style="margin: 20px;">
+                <br>
+
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary btn-card-secondary" >Learn More</a><button type="submit" class="waves-effect waves-light btn btn btn-primary btn-card-primary">Select</button>
+                </div>
         
-
-            <button type="submit" class="waves-effect waves-light btn" style = "background-color: #7649fe">Confirm Suit</button>
-        </form> 
+            </form> 
+        </div>  
     </div>
+        <div>dijosdf</div>
 </body>
 </html>
 

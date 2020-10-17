@@ -4,42 +4,85 @@
     <%- include('./Partials/_head') %>
 </head>
 <body>
+    <!-- <body style="background-image:url(http://localhost:3000/images/MainBG.png); max-width: 100vh;background-size: 100%;background-color: #031926;"></body> -->
     <h1>MEAL PLANS </h1>
 
 
+<<<<<<< HEAD
     <div class="card" style="width: 20rem;">
         <img id="card-image" src="../images/plant_based.png" class="card-img-top" alt="Card image cap" style="height:190px;">
+=======
+    <div class="dual-btn-card card " style="width: 20rem;">
+        <img id="card-image" src="../../../images/dinning3.png" class="card-img-top" alt="Card image cap" style="height:190px;">
+>>>>>>> main
         <div class="card-body">
             <h5 class="card-title">PLANT BASED</h5>
             <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Learn More</a>
+        </div> 
+
+        <div class="card-footer">
             <form action="/booking/diet/<%= user %>/edit?_method=PUT" method="post">
+<<<<<<< HEAD
                 <input hidden type="text" name="diet" id="diet" value="PLANT BASED">
                 <button class="btn btn-primary" type="submit" class="waves-effect waves-light btn">SELECT</button>
         </form> 
     </div>
     <div class="card" style="width: 20rem;">
         <img id="card-image" src="../images/variety.png" class="card-img-top" alt="Card image cap" style="height:190px;">
+=======
+                <input hidden type="text" name="diet" id="diet" value="VEGAN">
+                <a href="#" class="btn btn-primary btn-card-secondary">Learn More</a><button class="btn btn-primary btn-card-primary" type="submit" class="waves-effect waves-light btn">SELECT</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="dual-btn-card card" style="width: 20rem;">
+        <img id="card-image" src="../../../images/dinning1.png" class="card-img-top" alt="Card image cap" style="height:190px;">
+>>>>>>> main
         <div class="card-body">
             <h5 class="card-title">VARIETY</h5>
-            <p class="card-text"> Food for everyone</p>
-            <a href="#" class="btn btn-primary">Learn More</a>
+            <!-- <p class="card-text"> Food for everyone</p> -->
+        </div>
+
+        <div class="card-footer">
             <form action="/booking/diet/<%= user %>/edit?_method=PUT" method="post">
                 <input hidden type="text" name="diet" id="diet" value="VARIETY">
+<<<<<<< HEAD
                 <button class="btn btn-primary" type="submit" class="waves-effect waves-light btn">SELECT</button>
         </form> 
     </div>
     <div class="card" style="width: 20rem;">
         <img id="card-image" src="../images/gluten_free.png" class="card-img-top" alt="Card image cap" style="height:190px;">
+=======
+                <a href="#" class="btn btn-primary btn-card-secondary">Learn More</a><button class="btn btn-primary btn-card-primary" type="submit" class="waves-effect waves-light btn">SELECT</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="dual-btn-card card" style="width: 20rem;">
+        <img id="card-image" src="../../../images/dinning2.png" class="card-img-top" alt="Card image cap" style="height:190px;">
+>>>>>>> main
         <div class="card-body">
-            <h5 class="card-title">Gluten Free</h5>
-            <p class="card-text">For your health!</p>
-            <a href="#" class="btn btn-primary">Learn More</a>
+            <h5 class="card-title">GLUTEN FREE</h5>
+            <!-- <p class="card-text">For your health!</p> -->
+        </div>
+        <div>
             <form action="/booking/diet/<%= user %>/edit?_method=PUT" method="post">
+<<<<<<< HEAD
                 <input hidden type="text" name="diet" id="diet" value="VEGAN">
                 <button class="btn btn-primary" type="submit" class="waves-effect waves-light btn">SELECT</button>
         </form> 
+=======
+                <input hidden type="text" name="diet" id="diet" value="GLUTEN FREE">
+                <a href="#" class="btn btn-primary btn-card-secondary">Learn More</a><button class="btn btn-primary btn-card-primary" type="submit" class="waves-effect waves-light btn">SELECT</button>
+            </form> 
+        </div>
     </div>
+    <div>
+            <p>Alice Colby Sabantu</p>
+>>>>>>> main
+    </div>
+
 
 </body>
 </html>

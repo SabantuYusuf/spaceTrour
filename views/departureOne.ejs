@@ -1,23 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <%- include('./Partials/_head') %>
-</head>
+<%- include('./Partials/_head') %>
+
+
 <body>
-    <h1>FROM EARTH TO MARS</h1>
-    <h2>Prepare for Takeoff</h2>
-    <h5>Departures</h5>
-        16 Oct 2120 12:35PM
-    <h5>Arrival</h5>
-        30 April, 2121 12:35PM
-    <h5>Distance</h5>
-        39.866 million mi
-    
-    <form action="/booking/suit" method="post" class="form">
-        <input hidden type="text" name="flightSchedule" id="flightSchedule" value="16 Oct 2120, 12:35PM">
-        <button type="submit" class="waves-effect waves-light btn">Confirm Departure</button>
-        </form> 
-
-
-</body>
+<!-- <body style="background-image:url(http://localhost:3000/images/MainBG.png); max-width: 100vh;background-size: 100%;background-color: #031926;"> -->
+        <img src="../images/Mars1.png">
+        <h1>FROM EARTH TO MARS</h1>
+        <h2>Prepare for Takeoff</h2>
+        <h5>Departures</h5>
+            16 Oct 2120 12:35PM
+        <h5>Arrival</h5>
+            30 April, 2121 12:35PM
+        <h5>Distance</h5>
+            39.866 million mi
+        
+        <form action="/booking/suit" method="post" class="form">
+            <input hidden type="text" name="flightSchedule" id="flightSchedule" value="16 Oct 2120, 12:35PM">
+            <button type="submit" class="waves-effect waves-light btn btn btn-primary btn-card-primary " style="width: 100%; margin-top: 55px;" >Confirm Departure</button>
+            </form> 
+    </body>
 </html>
